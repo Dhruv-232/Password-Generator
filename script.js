@@ -8,7 +8,7 @@ var passwordLength = 0
 function getPasswordLength() {
   passwordLength = prompt("Please enter password length between 8 and 128 characters", "8-128")
   if (8 > passwordLength || passwordLength > 128) {
-    alert("The password length entered should be 8-128 characters in length. Please try again")
+    alert("Please enter a valid password length")
     getPasswordLength()
   }
 

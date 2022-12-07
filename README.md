@@ -1,3 +1,3 @@
 # Password-Generator
 
-![portfolio demo](./Screenshot(185).png)
+![portfolio demo](./Screenshot(178).png)

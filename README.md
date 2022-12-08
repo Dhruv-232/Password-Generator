@@ -41,6 +41,6 @@ THEN the password is either displayed in an alert or written to the page
 
 ![portfolio demo](./assets/image/Screenshot.png)
 
-Link for the website: 
+Link for the website: https://dhruv-232.github.io/Password-Generator/
 
-Link for the repository:
+Link for the repository: https://github.com/Dhruv-232/Password-Generator

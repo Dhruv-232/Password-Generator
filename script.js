@@ -1,10 +1,13 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var specialCharacters = ["!", "~", "!", "@", "#", "$", "%", "^", "&", "*", "_", "-", "+", "=", "`", "|"]
+// Generating arrays of characters to be used in the generation of the password
+var specialCharacters = [".", ",", "'", " ", "(", ")", "{", "}", "~", "!", "@", "#", "$", "%", "^", "&", "*", "_", "-", "+", "=", "`", "|"]
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 var numeric = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 var passwordLength = 0
+
+// Function that prompts users to enter password length and validate it
 function getPasswordLength() {
   passwordLength = prompt("Please enter password length between 8 and 128 characters", "8-128")
   if (8 > passwordLength || passwordLength > 128) {
@@ -14,6 +17,7 @@ function getPasswordLength() {
 
 }
 
+// Function that asks for password criteria and then displays it
 function generatePassword() {
     var includeUpperCase = confirm("Do you want uppercase letters?")
     var includeLowerCase = confirm("Do you want lowercase letters?")
@@ -28,7 +32,8 @@ function generatePassword() {
     }
 
     var charsToInclude = [];
-    console.log("Valid password criteria obtained ready to generate random password")
+    // console.log added to see if code runs properly till this point
+    console.log("Valid password criteria obtained ready to generate random password") 
     if (includeUpperCase === true) {
       charsToInclude = charsToInclude.concat(upperCase);
     }
